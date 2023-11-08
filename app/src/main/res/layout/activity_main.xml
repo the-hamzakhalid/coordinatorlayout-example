@@ -18,11 +18,20 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnScrollBased"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/scroll_based"
         app:layout_constraintEnd_toEndOf="@+id/btnLayoutBased"
         app:layout_constraintStart_toStartOf="@+id/btnLayoutBased"
         app:layout_constraintTop_toBottomOf="@+id/btnLayoutBased" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRecyclerViewBased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recyclerview_based"
+        app:layout_constraintEnd_toEndOf="@+id/btnScrollBased"
+        app:layout_constraintStart_toStartOf="@+id/btnScrollBased"
+        app:layout_constraintTop_toBottomOf="@+id/btnScrollBased" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
