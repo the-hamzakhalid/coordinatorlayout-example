@@ -8,17 +8,18 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLayoutBased"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
         android:text="@string/layout_based"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnScrollBased"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
         android:text="@string/scroll_based"
         app:layout_constraintEnd_toEndOf="@+id/btnLayoutBased"
@@ -26,12 +27,21 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLayoutBased" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnRecyclerViewBased"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnRVBased"
+        android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
         android:text="@string/recyclerview_based"
         app:layout_constraintEnd_toEndOf="@+id/btnScrollBased"
         app:layout_constraintStart_toStartOf="@+id/btnScrollBased"
         app:layout_constraintTop_toBottomOf="@+id/btnScrollBased" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRVTwoBased"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/recyclerview_two_based"
+        app:layout_constraintEnd_toEndOf="@+id/btnRVBased"
+        app:layout_constraintStart_toStartOf="@+id/btnRVBased"
+        app:layout_constraintTop_toBottomOf="@+id/btnRVBased" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

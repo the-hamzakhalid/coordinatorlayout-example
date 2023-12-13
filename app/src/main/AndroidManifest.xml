@@ -19,7 +19,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".rv.RecyclerViewBasedActivity"
+            android:name=".rv.RVBasedActivity"
+            android:label="@string/title_activity_layout_based_activtiy"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".rv.RVTwoBasedActivity"
             android:label="@string/title_activity_layout_based_activtiy"
             android:theme="@style/AppTheme.NoActionBar" />
 

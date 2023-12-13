@@ -3,7 +3,8 @@ package com.example.coordinatorlayout_example
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.coordinatorlayout_example.rv.RecyclerViewBasedActivity
+import com.example.coordinatorlayout_example.rv.RVBasedActivity
+import com.example.coordinatorlayout_example.rv.RVTwoBasedActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +22,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        btnRecyclerViewBased.setOnClickListener {
-            startActivity(Intent(this, RecyclerViewBasedActivity::class.java))
+        btnRVBased.setOnClickListener {
+            startActivity(Intent(this, RVBasedActivity::class.java))
+        }
+
+        btnRVTwoBased.setOnClickListener {
+            startActivity(Intent(this, RVTwoBasedActivity::class.java))
         }
     }
 

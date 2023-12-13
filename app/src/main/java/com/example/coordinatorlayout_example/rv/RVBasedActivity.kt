@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.coordinatorlayout_example.databinding.ActivityRecyclerviewBasedBinding
+import com.example.coordinatorlayout_example.databinding.ActivityRvBasedBinding
 import com.example.coordinatorlayout_example.mainCoroutine
 import kotlinx.coroutines.delay
 
@@ -20,11 +20,11 @@ import kotlinx.coroutines.delay
 
 /*Ref Chat GPT*/
 
-class RecyclerViewBasedActivity : AppCompatActivity() {
+class RVBasedActivity : AppCompatActivity() {
 
 
-    private val TAG = RecyclerViewBasedActivity::class.java.simpleName
-    private var binding: ActivityRecyclerviewBasedBinding? = null
+    private val TAG = RVBasedActivity::class.java.simpleName
+    private var binding: ActivityRvBasedBinding? = null
     private var activity: AppCompatActivity = this
 
     private val list =
@@ -41,7 +41,7 @@ class RecyclerViewBasedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRecyclerviewBasedBinding.inflate(layoutInflater)
+        binding = ActivityRvBasedBinding.inflate(layoutInflater)
 
         binding?.run {
             setContentView(root)
@@ -51,7 +51,7 @@ class RecyclerViewBasedActivity : AppCompatActivity() {
 
     }
 
-    private fun ActivityRecyclerviewBasedBinding.init() {
+    private fun ActivityRvBasedBinding.init() {
 
 
         nestedScrollView.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
@@ -80,7 +80,7 @@ class RecyclerViewBasedActivity : AppCompatActivity() {
     }
 
 
-    private fun ActivityRecyclerviewBasedBinding.initRv() {
+    private fun ActivityRvBasedBinding.initRv() {
         rvCollapseAdapter = RvCollapseAdapter() { pos, name ->
 
         }

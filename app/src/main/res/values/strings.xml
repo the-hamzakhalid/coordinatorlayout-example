@@ -21,6 +21,7 @@
     </string>
     <string name="layout_based">Layout Based</string>
     <string name="scroll_based">Scroll Based</string>
-    <string name="recyclerview_based">Recyclerview\n Based</string>
+    <string name="recyclerview_based">RV Based</string>
+    <string name="recyclerview_two_based">RV Two Based</string>
     <string name="msg_clicked">Hi! I am Clicked and my position is changed.</string>
 </resources>
